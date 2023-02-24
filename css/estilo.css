@@ -1,9 +1,9 @@
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat';
+            font-family: 'Roboto';
         }
         
         html {
@@ -14,7 +14,7 @@
         /* *********************/
         
         #inicio {
-            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+            background-color: #25263E;
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -39,7 +39,7 @@
         
         #inicio .contenido header .contenido-header h1 {
             text-align: center;
-            color: #ff5080;
+            color: #48F784;
         }
         
         #inicio .contenido header .contenido-header nav ul {
@@ -57,7 +57,7 @@
         }
         
         #inicio .contenido header .contenido-header nav ul li a:hover {
-            color: #ff5080;
+            color: #48F784;
         }
         
         #inicio .contenido header .contenido-header .redes a {
@@ -69,11 +69,11 @@
         }
         
         #inicio .contenido header .contenido-header .redes a:hover {
-            color: #ff5080;
+            color: #48F784;
         }
         
         #inicio .contenido header .contenido-header .seleccionado {
-            color: #ff5080;
+            color: #48F784;
         }
         
         #inicio .contenido .presentacion {
@@ -100,9 +100,9 @@
             text-align: center;
         }
         
-        #inicio .contenido .presentacion h2 span {
+        #inicio .contenido .presentacion span {
             font-size: 25px;
-            color: #ff5080;
+            color: #48F784;
         }
         
         #inicio .contenido .presentacion .descripcion {
@@ -126,7 +126,7 @@
         }
         
         #inicio .contenido .presentacion a:hover {
-            background-color: #ff5080;
+            background-color: #48F784;
         }
         
         #icono-nav {
@@ -147,12 +147,12 @@
         
         #sobremi .contenedor-foto {
             max-width: 400px;
-            margin-right: 80px;
+            margin-right: 120px;
         }
         
         #sobremi .contenedor-foto img {
-            padding: 20px;
-            width: 100%;
+            padding: 10px;
+            width: 200%;
             border-radius: 20px;
             background-color: #f3f3f3;
         }
@@ -178,7 +178,7 @@
         }
         
         #sobremi .sobremi h2 span {
-            color: #ff5080;
+            color: 48F784;
         }
         
         #sobremi .sobremi h3 {
@@ -208,7 +208,7 @@
         }
         
         #sobremi .sobremi a:hover {
-            background-color: #ff5080;
+            background-color: 48F784;
             color: #fff;
         }
         /* *********************/
@@ -249,6 +249,8 @@
         
         #servicios .fila .servicio:hover {
             box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+            color: #48F784;
+            background-color: #25263E;
         }
         
         #servicios .fila .servicio .icono {
@@ -289,7 +291,7 @@
         /* *********************/
         
         .contenedor-skills {
-            background: linear-gradient( #eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient( #381183, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -438,7 +440,7 @@
             position: absolute;
             left: 0px;
             background-color: rgba(0, 0, 0, 0.8);
-            color: #ff5080;
+            color: #48F784;
             width: 100%;
             padding: 10px;
             opacity: 0;
@@ -512,7 +514,7 @@
         }
         
         #contacto .btn-enviar:hover {
-            background-color: #ff5080;
+            background-color: #48F784;
             color: #fff;
         }
         /* *********************/
