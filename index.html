@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
-    <title>LP Desarrollador Web</title>
+    <title>Ismael Mamaní</title>
 </head>
 
 <body>
@@ -23,6 +25,7 @@
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#skill" onclick="seleccionar(this)">HABILIDADES</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
@@ -35,9 +38,11 @@
 
 
                     <div class="redes">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=3865201591"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/ismael.mamani.378"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_iam22_/"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://www.linkedin.com/in/ismael-mamaní"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ismael9m4"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </header>
@@ -60,7 +65,7 @@
             <h2>Hola! <span>¡Cómo estas!</span> </h2>
             <h3></h3>
             <p>
-Mis amigos me llaman Isma, soy Desarrollador Web en PHP y en front-end. Además del mundo IT, me encanta el mundo del diseño, impulsar proyectos y generar nuevas ideas.
+Me llamo Ismael Mamaní. Mis amigos me llaman Isma, soy Desarrollador Web en PHP y en front-end. Además del mundo IT, me encanta el mundo del diseño, impulsar proyectos y generar nuevas ideas.
 
 Actualmente trabajo como sysadmin ofreciendo servicio a una empresa de salud y de soporte IT.
 
@@ -83,7 +88,7 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
                     <li>UX</li>
                     <li>Frameworks</li>
                 </ul>
-                <p>Realizo mantenimiento de varios sitios webs empresariales</p>
+                <p>Desarrollo de funcionalidades para sitios webs</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-file-code"></i></span>
@@ -105,7 +110,7 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
                     <li>Linux</li>
                     <li>Planes de contingencia</li>
                 </ul>
-                <p>Realizo mantenimiento preventivo a servidores</p>
+                <p>Mantenimiento preventivo a servidores</p>
             </div>
         </div>
         <div class="fila">
@@ -116,9 +121,9 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
                 <ul class="servicios-tag">
                     <li>Hosting</li>
                     <li>Dominio</li>
-                    <li>Posicionamiento y gestion en Redes Sociales</li>
+                    <li>SEO</li>
                 </ul>
-                <p>Experiencias con redes sociales de movimientos y empresas</p>
+                <p>Experiencias en marketing y gestión de redes sociales</p>
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-palette"></i></span>
@@ -139,56 +144,77 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
                     <li>Hardware</li>
                     <li>Software</li>
                 </ul>
-                <p>Asesoria sobre equipos informaticos y sobre implementacion de software asi como capacitacion sobre su uso</p>
+                <p>Asesoría sobre equipos y redes informáticas y sobre implementacion de software asi como capacitacion sobre su uso</p>
             </div>
         </div>
     </section>
 
     <!-- SECCION HA B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>HABILIDADES </h3>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Html & Css</p>
-                <span class="porcentaje">95%</span>
-            </div>
+    <section id="skill">
+            
+        <div class="contenedor-skills" id="skills">
+                <h3 class="titulo-seccion">HABILIDADES</h3>
+                 <div class="fila">
+                     <div class="habilidad">
+                         <h4 class="subtitulo">Soft skills</h4>
+                         <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>Gestor de tiempos</p>
+                            </div>
+                         </div>
+                          <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>Proactivo</p>
+                            </div>
+                         </div>
+                         <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>Resolutivo</p>
+                            </div>
+                         </div>
+                         <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>Liderazgo</p>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="habilidad">
+                         <h4 class="subtitulo">Hard skills</h4>
+                         <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>Html & Css </p>
+                                <span class="porcentaje">95%</span>
+                            </div>
 
-            <div class="barra">
-                <div class="" id="html"></div>
-            </div>
+                            <div class="barra">
+                                <div class="" id="html"></div>
+                            </div>
+                         </div>
+                         <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>PHP</p>
+                                <span class="porcentaje">80%</span>
+                            </div>
+
+                            <div class="barra">
+                                <div class="" id="js"></div>
+                            </div>
+                        </div>
+                         <div class="skill">
+                            <div class="info">
+                                <p> <span class="lista"> </span>Javascript</p>
+                                <span class="porcentaje">70%</span>
+                            </div>
+
+                            <div class="barra">
+                                <div class="" id="bd"></div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
         </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>PHP</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="js"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Java</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="bd"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Inglés</p>
-                <span class="porcentaje">55%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="ps"></div>
-            </div>
-        </div>
-    </div>
-
+    </section>
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
         <h3 class="titulo-seccion">Mis Proyectos</h3>
@@ -203,7 +229,7 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto2.jpg" alt="">
+                <img src="img/pendiente.png" alt="">
                 <div class="info">
                     <h4>SATUM</h4>
                     <p>Sistema de gestion de Turnos</p>
@@ -211,7 +237,7 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto3.jpg" alt="">
+                <img src="img/pendiente.png" alt="">
                 <div class="info">
                     <h4>Christoff</h4>
                     <p>ChatBot</p>
@@ -263,7 +289,7 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto9.jpg" alt="">
+                <img src="img/VerdadoReto.jpg" alt="">
                 <div class="info">
                     <h4>IAM-Verdad o Reto</h4>
                     <p>Aplicacion Móvil</p>
@@ -276,19 +302,22 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
     <section id="contacto">
         <h3 class="titulo-seccion">Contáctame ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="https://formsubmit.co/ismamamani22@gmail.com" method="POST">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo *" name="Nombre" class="input-mitad">
+                    <input type="email" placeholder="Tú Dirección de Email" name="Email" class="input-mitad">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" placeholder="Asunto..." name="Asunto" class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
                 </div>
 
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="submit" onclick="mostrar()" value="Enviar Mensaje" class="btn-enviar">
+                
+                <input type="hidden" name="_next" value="false">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
@@ -297,14 +326,14 @@ Disfruto mucho de aprender nuevas experiencias, vinculando la informática con n
     <footer>
         <p>Todos los derechos reservados - 2022</p>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=3865201591"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/ismael.mamani.378"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_iam22_/"><i class="fa-brands fa-instagram-square"></i></a>
         </div>
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
             scroll-behavior: smooth;
         }
         /* *********************/
-        /* seccion I N I C I O */
+        /* seccion INICIO */
         /* *********************/
         
         #inicio {
@@ -74,6 +74,8 @@
         
         #inicio .contenido header .contenido-header .seleccionado {
             color: #48F784;
+            text-decoration: underline;
+            text-decoration-thickness: 5px;
         }
         
         #inicio .contenido .presentacion {
@@ -134,7 +136,7 @@
             display: none;
         }
         /* *********************/
-        /* seccion S O B R E  M I */
+        /* seccion SOBRE  MI */
         /* *********************/
         
         #sobremi {
@@ -208,24 +210,24 @@
         }
         
         #sobremi .sobremi a:hover {
-            background-color: 48F784;
-            color: #fff;
+            background-color: #48F784;
+            color: #111135;
         }
         /* *********************/
-        /* seccion S E R V I C I O S */
+        /* seccion SERVICIOS */
         /* *********************/
         
         #servicios {
             padding: 100px 15px;
             text-align: center;
-            background-color: #f3f3f3;
+            background-color: #111135;
         }
         
         #servicios .titulo-seccion {
             text-align: center;
             font-size: 22px;
             text-transform: uppercase;
-            color: #111135;
+            color: #fff;
             text-decoration: underline;
             text-decoration-color: #d3d3d3;
             text-decoration-thickness: 5px;
@@ -287,28 +289,62 @@
             line-height: 22px;
         }
         /* *********************/
-        /* seccion S K I L L S */
+        /* seccion HABILIDADES */
         /* *********************/
-        
-        .contenedor-skills {
+        #skill{
             background: linear-gradient( #381183, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            justify-content:center;
+            text-align: center;
+        }
+        #skill .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: underline;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        #skill .fila{
+            display: flex;
+            justify-content: center;
+            max-width: 1150px;
+            margin: 10px auto;
+        }
+        #skill .fila .habilidad{
+            width: 500px;
+            max-width: 100%;
+            padding: 30px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: .5s;
+        }
+        #skill .subtitulo{
+            text-align: center;
+            font-size: 17px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 25px;
+        }
+        .contenedor-skills {
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
             color: #fff;
             background-position: center center;
             padding: 100px 0;
-            text-align: center;
+            text-align: center;  
         }
         
         .contenedor-skills .skill {
-            max-width: 600px;
+            max-width: 100%;
             margin: 30px auto;
         }
         
         .contenedor-skills .skill .info {
             display: flex;
             justify-content: space-between;
+            
         }
         
         .contenedor-skills .skill .lista {
@@ -342,17 +378,11 @@
         
         .contenedor-skills .skill .barra .barra-progreso3 {
             background-color: #fff;
-            width: 90%;
+            width: 70%;
             height: 6px;
             animation: progreso3 2s forwards;
         }
         
-        .contenedor-skills .skill .barra .barra-progreso4 {
-            background-color: #fff;
-            width: 85%;
-            height: 6px;
-            animation: progreso4 2s forwards;
-        }
         
         @keyframes progreso1 {
             0% {
@@ -368,7 +398,7 @@
                 width: 0;
             }
             100% {
-                width: 90%;
+                width: 80%;
             }
         }
         
@@ -377,20 +407,13 @@
                 width: 0;
             }
             100% {
-                width: 90%;
+                width: 70%;
             }
         }
         
-        @keyframes progreso4 {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: 85%;
-            }
-        }
+
         /* *********************/
-        /* seccion P O R T F O L I O */
+        /* seccion PORTFOLIO */
         /* *********************/
         
         #portfolio {
